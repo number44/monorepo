@@ -1,4 +1,7 @@
-import * as React from "react";
-export const Button = () => {
-  return <button>Boop</button>;
+import * as React from 'react';
+interface PropsI {
+	text: string;
+}
+export const Button = ({ text }: PropsI) => {
+	return <button>{text}</button>;
 };
